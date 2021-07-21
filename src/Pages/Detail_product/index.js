@@ -15,7 +15,7 @@ import White from '../../asset/image/orang/putih.png'
 import Button_count from '../../Component/Base/Button_count';
 import CardProduct from '../../Component/modules/Card_Products';
 
-
+//HALPOOOO
 export class Product extends Component {
     constructor(props){
         super(props);
