@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Metropolis';
+}
+/* ----------------------------------------------- */
+.texthead2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.text-category{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+}
+/* -------------------------------------------------------- */
+.topcard{
+    /* margin-top: 14px; */
+    width: 100% !important;
+    height: 126px;
+    margin-bottom: 10px;
+}
+.cardC{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.check1st{
+      /* background-color: cadetblue; */
+      width: 20px;
+      margin-top: 23px;
+}
+.text1st{
+     /* background-color: darkgoldenrod; */
+     width: 200px;
+     margin-left: 10px;
+     margin-top: 20px;
+}
+.delText{
+     /* background-color: darkmagenta; */
+     width: 450px;
+     margin-left: 100px;
+     text-align-last: right;
+     margin: 25px;
+}
+.delText a{
+    text-decoration: none;
+}
+.txt1{
+    padding-top: 1px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.deleteT{
+    font-size: 16px;
+    line-height: 16px;
+    color: #DB3022;
+}
+.checkS{
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid black;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+    width: 20px;
+    height: 20px;
+}
+.checkS:active, .checkS:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkS:checked {
+	background-color: #DB3022;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+.checkS:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #FFFFFF;
+}
+
+/* ----------------------------------------------------- */
+.bodyC{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+.checkbSide{
+    /* background-color: cadetblue; */
+    width: 20px;
+    margin-top: 23px;
+}
+.checkMark{
+    width: 20px;
+    height: 20px;
+}
+.imageCard{
+    /* background-color: darkblue; */
+    width: 103px;
+    margin-left: 12px;
+}
+.imagejas{
+    width: 103px;
+    height: 69px;
+    border-radius: 8px;
+}
+.text{
+    /* background-color: darkgoldenrod; */
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.buttonAdd{
+    /* background-color: darkcyan; */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 12px;
+    margin-top: 15px; */
+}
+.text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkmagenta; */
+    width: 120px;
+    text-align-last: right;
+}
+/* ------------------------------------------- */
+.sec_card{
+    width: 100%;
+    margin: auto;
+    margin-left: 5px;
+    padding: 20 0px;
+}
+.shoppingsum{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 10px;
+
+}
+.shoppingsum2{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+
+}
+.orderDetail{
+    margin-top: 30px;
+    font-weight: 500;
+}
+.orderDetail2{
+    margin-top: 20px;
+    font-weight: 500;
+    /* margin-left: 25px; */
+ 
+}
+.Cardtext{
+    font-size: 16px;
+    line-height: 16px;
+    color: #9B9B9B;  
+}
+.priceCard{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* margin-left: 100px; */
+}
+.priceCard2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 25px;
+}
+
+.btncard2{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 25px;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+hr{
+    margin-top: 20px;
+}

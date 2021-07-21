@@ -1,0 +1,19 @@
+.carousel_cell {
+    /* width: 66%; */
+    /* height: 200px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    /* background-color: aquamarine; */
+    counter-increment: carousel_cell;
+  }
+  
+  /* cell number */
+  .carousel_cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel_cell);
+    line-height: 0px;
+    /* font-size: 80px; */
+    color: white;
+  }
+  

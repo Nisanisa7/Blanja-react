@@ -1,0 +1,30 @@
+.button_wrapper{
+    display: flex;
+}
+.number{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+.button_Odd{
+    width: 36px;
+    height: 36px;
+    background: #D4D4D4;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.button_Add{
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);   
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+    
+}

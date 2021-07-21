@@ -1,0 +1,12 @@
+.btnLogin{
+    height: 48px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background: #DB3022;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}

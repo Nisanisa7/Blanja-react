@@ -1,0 +1,195 @@
+@media only screen and (max-width: 600px) {
+    .wrapperHead{
+        display: block !important;
+    }
+    .logo{
+        margin: auto !important;
+        width: fit-content;
+        /* border: 1px solid #000; */
+    }
+    .search-bar{
+       width: 100% !important;
+    }
+    /* .box-container{
+       display: none;
+    }
+    .side-button{
+        display: none;
+    } */
+    .nav{
+       width: 100%;
+    }
+    .nav_link{
+        margin: auto !important;
+    }
+    .nav_link li{
+        padding: 0px 20px !important;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Metropolis';
+}
+.texthead2{
+    margin-top: 50px;
+    
+}
+.text_category{
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 34px;
+}
+.text_smol{
+    padding-top: 30px;
+    color: #222222;
+    font-size: 12px;
+
+}
+/* --------- card 1 --------------- */
+
+.topcard{
+    /* margin-top: 14px;
+    width: 720px;
+    height: 190px; */
+     /* margin-top: 14px; */
+     width: 100% !important;
+     /* height:190px; */
+     margin-bottom: 10px;
+ }
+
+.topcard button{
+    width: 210px;
+    height: 36px;
+    border: 1px solid #9B9B9B;
+    box-sizing: border-box;
+    border-radius: 24px;
+    font-size: 14px;
+}
+.tittle1{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+}
+.tittle2{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
+}
+/* -------- card 2 ---------------------------------- */
+.bodyC{
+    display: flex;
+    flex-direction: row;
+}
+.topcard2{
+    padding-top: 12px;
+    margin-top: 14px;
+    width: 720px;
+    height: 126px;
+}
+.imagejas{
+    width: 103px;
+    height: 69px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding-left: 10px;
+    padding-top: 0px;
+    width: 400px;
+}
+.txt1{
+    padding-top: 1px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.txt2{
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #9B9B9B;
+}
+.text3{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    text-align: right;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+/* ----------------------------------------------------------- */
+.sec_card{
+    width: 100%;
+    margin: auto;
+    margin-left: 5px;
+    padding: 20 0px;
+}
+.shoppingsum{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+    margin-bottom: 10px;
+
+}
+.shoppingsum2{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #222222;
+
+}
+.orderDetail{
+    font-weight: 500;
+    margin-left: 25px;
+}
+.orderDetail2{
+    margin-top: 20px;
+    font-weight: 500;
+    /* margin-left: 25px; */
+ 
+}
+.Cardtext{
+    font-size: 16px;
+    line-height: 16px;
+    color: #9B9B9B;  
+}
+.priceCard{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* margin-left: 100px; */
+}
+.priceCard2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 25px;
+}
+hr{
+    margin-top: 20px;
+}
+.btncard2{
+    width: 100%;
+    border-radius: 25px;
+    align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}

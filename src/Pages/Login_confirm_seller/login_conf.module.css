@@ -1,0 +1,43 @@
+.wrapper{
+    width: 400px;
+    height: 500px;
+    font-family: Metropolis;
+    /* background-color: lightgray; */
+    /* padding: 0 50px 0 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: none;
+}
+.h1_title{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+}
+.wrapper .texttitle{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: #9B9B9B;
+}
+.forgotPass{
+    margin-top: 20px;
+    text-align-last: right;
+}
+.forgotPass a, .registerLink a{
+    color: #DB3022;
+    text-decoration: none;
+}
+.registerLink{
+    margin-top: 20px;
+    text-align: center;
+}
+.wrapper .formwarp{
+    margin-top: 20px;
+   
+}
