@@ -3,6 +3,9 @@
     .wrapperHead{
         display: block !important;
     }
+    .wrapper{
+        display: block !important;
+    }
     .logo{
         margin: auto !important;
         width: fit-content;
@@ -51,15 +54,19 @@ li{
     
 }
 .wrapperHead{
-    padding-top: 15px;
-    display: flex;
-    height: auto;
+    /* padding-top: 15px; */
+    /* display: flex; */
+    height: 100%;
     /* border: 1px solid #000; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /*color: #ffff;
     align-items: center;
     padding: 30px 10%;*/
     box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25); 
+}
+.wrapper{
+    display: flex;
+     justify-content: space-between;
 }
 .img2{
     padding-top: 10px;

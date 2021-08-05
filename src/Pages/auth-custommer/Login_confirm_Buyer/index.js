@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./loginconfbuy.module.css";
 import { Link } from "react-router-dom";
-import Button_baseLogin from "../../Component/base login/Button_baseLogin";
-import Input from "../../Component/base login/Input";
-import Logo_login from "../../Component/base login/logo";
+import Button_baseLogin from "../../../Component/base login/Button_baseLogin";
+import Input from "../../../Component/base login/Input";
+import Logo_login from "../../../Component/base login/logo";
 
 const Login_confirmation_buyer = () => {
   return (

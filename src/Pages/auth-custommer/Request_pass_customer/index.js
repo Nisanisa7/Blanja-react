@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./reqpass.module.css";
-import Lock from "../../asset/image/reset password.png";
-import Logo_login from "../../Component/base login/logo";
+import Lock from "../../../asset/image/reset password.png";
+import Logo_login from "../../../Component/base login/logo";
 import { Link } from "react-router-dom";
 
 const RequestPass = () => {

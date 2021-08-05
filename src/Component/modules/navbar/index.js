@@ -21,7 +21,9 @@ const Navbar = (props) => {
   const handleShow = () => setShow(true);
   return (
     <div>
-        <div className={`container ${style.wrapperHead}`}>
+        <div className={`${style.wrapperHead}`}>
+          <div className={`container ${style.wrapper}`}>
+
           <Link to="/home">
           <div className={style.logo}>
             <img src={LogoBag} alt="" />
@@ -35,7 +37,7 @@ const Navbar = (props) => {
                 type="text"
                 name=""
                 placeholder="search"
-              />
+                />
             </div>
             <div className={style.side_button}>
               <button onClick={handleShow}>
@@ -67,6 +69,7 @@ const Navbar = (props) => {
                 </Link>
               </li>
             </ul>
+                </div>
           </div>
         </div>
 

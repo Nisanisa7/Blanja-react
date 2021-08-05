@@ -90,8 +90,8 @@ export class Product extends Component {
                 <div className={style.wrapper}>
 
                     <div className={style.wrapper_Image}>
-                        <div className={style.main_Image}>
-                             <img className={style.main_img} src={this.state.image} alt=""/>
+                        <div className="embed-responsive embed-responsive-16by9">
+                             <img className={`embed-responsive-item ${style.main_img}`} src={this.state.image} alt=""/>
                         </div>
                         <div className={style.small_Image}>
                             <img class={style.image_Section} src={Orange} alt=""/>

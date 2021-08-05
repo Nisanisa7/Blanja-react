@@ -1,0 +1,70 @@
+.wrapper{
+    width: 400px;
+    height: 500px;
+    font-family: Metropolis;
+    /* background-color: lightgray; */
+    /* padding: 0 50px 0 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: none;
+}
+/* h1{
+    text-align: center;
+} */
+.texttitle{
+    font-size: 18px;
+    font-weight: bold; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonGroup button{
+    display: inline-block;
+    width: 123px;
+    height: 48px;
+    border: 1px solid #9B9B9B;
+}
+.buttonGroup{
+    margin-top: 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.cus{
+    background: white;
+    border-right: none !important;
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+}
+.seller{
+    background: #DB3022;
+    border-color: #DB3022 !important;
+    color: white;
+    border-left: none !important; 
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.forgotPass{
+    margin-top: 20px;
+    text-align-last: right;
+}
+.forgotPass a, .registerLink a{
+    color: #DB3022;
+    text-decoration: none;
+}
+.registerLink{
+    margin-top: 20px;
+    text-align: center;
+}
+.wrapper .formwarp{
+    margin-top: 20px;
+   
+}

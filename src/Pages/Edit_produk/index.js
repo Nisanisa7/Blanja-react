@@ -25,7 +25,7 @@ const Editproduct = (props) => {
       image : ''
   })// product = default , setState = untuk mengubah datanya
   useEffect(() => {
-    axios.get(`http://localhost:4000/products/${props.match.params.id}`)
+    axios.get(`http://localhost:4000/v1/products/${props.match.params.id}`)
     .then((res)=>{
       // setItems(res.data.data)
       const data = res.data.data[0]
@@ -52,7 +52,7 @@ const handleChange= (e) =>{
 }
 const handleUpdate = (e) =>{
   e.preventDefault()
-  axios.put(`http://localhost:4000/products/${props.match.params.id}`, product)
+  axios.put(`http://localhost:4000/v1/products/${props.match.params.id}`, product)
   .then((res)=>{
     const data = res.data.data
     setProduct({

@@ -1,0 +1,77 @@
+
+body{
+    font-family: 'Metropolis';
+    background: #F0F5F9;
+
+}
+.wrapper{
+    width: 450px;
+    height: 450px;
+    background: #FFFFFF;
+    /* padding: 0 50px 0 50px; */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.logo{
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner_Wrap{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.h1Title{
+   margin-top: 20px;
+   font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #253757;
+
+}
+.centerImage{
+    margin-top: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.centerImage img{
+    Width : 205px;
+    Height : 205px
+}
+.text{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #46505C;
+
+}
+.btn{
+    height: 48px;
+    width: 204px;
+    margin-top: 28px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background: #DB3022;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 20px;
+    margin-right: 0;
+    background: #DF4538;
+    border-radius: 0px 0px 20px 20px;
+}

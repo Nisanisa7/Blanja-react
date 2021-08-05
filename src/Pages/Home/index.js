@@ -35,9 +35,9 @@ export class Home extends Component {
     render() {
         return (
             <div>
+                <Navbar products={this.state.products}/>
                 <div className="container">
 
-                <Navbar products={this.state.products}/>
 
                 {/* ==== Corousel 1=========================== */}
                 <div className={style.head_Corou}>

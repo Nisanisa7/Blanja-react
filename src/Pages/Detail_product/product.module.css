@@ -5,9 +5,12 @@
     .wrapper_Image{
         margin: auto;
         width: 100%;
+        object-fit: cover;
     }
-    .main_Image img{
-        width: 100%;
+    .main_img{
+        object-fit: cover;
+        width: 50px;
+        height: 300x;;
     }
     .wrapper_Content{
         margin-top: 15px;

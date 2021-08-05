@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import style from "./register_cus.module.css";
 import { Link } from "react-router-dom";
-import Logo_login from "../../Component/base login/logo";
-import Button_switch from "../../Component/base login/ButtonSwitch";
+import Logo_login from "../../../Component/base login/logo";
+// import Button_switch from "../../Component/base login/ButtonSwitch";
 // import Input from "../../Component/base login/Input";
-import Button from "../../Component/base login/Button_baseLogin";
+// import Button from "../../Component/base login/Button_baseLogin";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
-import { RegisterBuyer } from "../../configs/redux/actions/buyerActions";
+import { RegisterBuyer } from "../../../configs/redux/actions/buyerActions";
 const Register_custommer = () => {
 
   const dispatch = useDispatch()

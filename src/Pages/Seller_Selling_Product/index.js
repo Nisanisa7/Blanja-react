@@ -138,7 +138,7 @@ const Selling_product = () => {
                                 <div class="card-body">
                                     <div class={style.box_Wrapper}>
                                     <div className={style.image_Box}>
-                                    <img className={style.images}src={form.imagePreview} alt="" />
+                                    <img className={style.images} src={form.imagePreview} alt="" />
                                         
                                     </div>
                                     <div className={style.image_Box2}>

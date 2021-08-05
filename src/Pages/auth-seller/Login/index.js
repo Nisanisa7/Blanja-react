@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import style from "./login.module.css";
 import { Link } from "react-router-dom";
-import Button_baseLogin from "../../Component/base login/Button_baseLogin";
-import Input from "../../Component/base login/Input";
-import Logo_login from "../../Component/base login/logo";
+import Button_baseLogin from "../../../Component/base login/Button_baseLogin";
+import Input from "../../../Component/base login/Input";
+import Logo_login from "../../../Component/base login/logo";
 
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router"; 
-import { loginSeller } from "../../configs/redux/actions/sellerAction";
+import { loginSeller } from "../../../configs/redux/actions/sellerAction";
 
 const Login = ({ props }) => {
 

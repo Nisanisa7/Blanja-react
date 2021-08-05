@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./pass_conf_seller.module.css";
 import { Link } from "react-router-dom";
-import Logo_login from "../../Component/base login/logo";
-import Input from "../../Component/base login/Input";
-import Button from "../../Component/base login/Button_baseLogin";
+import Logo_login from "../../../Component/base login/logo";
+import Input from "../../../Component/base login/Input";
+import Button from "../../../Component/base login/Button_baseLogin";
 
 const Confirm_pass_seller = () => {
   return (

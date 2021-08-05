@@ -7,19 +7,19 @@ import CheckOut from "./Pages/Checkout";
 
 // import About from './pages/About'
 // import Detail from './pages/Detail'
-import Login from "./Pages/Login";
-import Register from "./Pages/Register";
-import Reset_password_seller from "./Pages/Reset_pass_seller";
-import Confirm_pass_seller from "./Pages/Password_confirm_seller";
-import Login_confirmation from "./Pages/Login_confirm_seller";
+import Login from "./Pages/auth-seller/Login";
+import Register from "./Pages/auth-seller/Register";
+import Reset_password_seller from "./Pages/auth-seller/Reset_pass_seller";
+import Confirm_pass_seller from "./Pages/auth-seller/Password_confirm_seller";
+import Login_confirmation from "./Pages/auth-seller/Login_confirm_seller";
 import Bag from "./Pages/Mybag";
 
-
-import Login_User from "./Pages/Login_User";
-import Register_User from "./Pages/Register_User";
-import Request_password from "./Pages/Request_pass_customer";
-import Login_confirmation_buyer from "./Pages/Login_confirm_Buyer";
-import Confirm_pass_custommer from "./Pages/password_confirm_cust";
+// --auth custommer
+import Login_User from "./Pages/auth-custommer/Login_User";
+import Register_User from "./Pages/auth-custommer/Register_User";
+import Request_password from "./Pages/auth-custommer/Request_pass_customer";
+import Login_confirmation_buyer from "./Pages/auth-custommer/Login_confirm_Buyer";
+import Confirm_pass_custommer from "./Pages/auth-custommer/password_confirm_cust";
 
 
 

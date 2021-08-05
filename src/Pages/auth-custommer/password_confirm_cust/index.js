@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import { useEffect } from 'react'
 import style from "./passwordconf.module.css";
 import { Link } from "react-router-dom";
-import Logo_login from "../../Component/base login/logo";
-import Input from "../../Component/base login/Input";
-import Button from "../../Component/base login/Button_baseLogin";
+import Logo_login from "../../../Component/base login/logo";
+import Input from "../../../Component/base login/Input";
+import Button from "../../../Component/base login/Button_baseLogin";
 import queryString from "query-string";
 import { useLocation} from "react-router-dom";
 import axios from "axios";
