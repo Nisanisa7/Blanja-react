@@ -16,10 +16,10 @@ export class Home_bf_login extends Component {
     isLoading: true,
 }
 async getProduct() {
-    const response = await axios.get('http://localhost:4000/products');
+    const response = await axios.get('http://localhost:4000/v1/products');
     try {
       this.setState({
-        products: response.data.data,
+        products: response.data.item,
         isLoading: false,
       });
     } catch (error) {

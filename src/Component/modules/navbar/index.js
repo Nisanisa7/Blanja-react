@@ -91,7 +91,7 @@ const Navbar = (props) => {
         </Modal.Header>
         <Modal.Body>
           <div className={style.colorChoice}>
-          <p>Color</p>
+          <p className={style.text}>Color</p>
                   <input className={`${style.checkmark} ${style.bg_black}`} type="radio" name="radio"/> 
                   <input className={`${style.checkmark} ${style.bg_shiro}`} type="radio" name="radio"/> 
                   <input className={`${style.checkmark} ${style.bg_red}`} type="radio" name="radio"/> 
@@ -99,7 +99,7 @@ const Navbar = (props) => {
                   <input className={` ${style.checkmark} ${style.bg_ginger}`} type="radio" name="radio"/>
                   <input type="radio" className={`${style.checkmark} ${style.bg_donker}`} name="radio"/>
           <hr/>
-          <p>Sizes</p>
+          <p className={style.text}>Sizes</p>
           <div className={style.sizeWrap}>
 
             <div className="btn-group btn-group-toggle" data-toggle="buttons">
@@ -133,7 +133,7 @@ const Navbar = (props) => {
           
           </div>
           <hr/>
-          <p>Category</p>
+          <p className={style.text}>Category</p>
           <div className={style.categoryWrap}>
             <div className="row">
               <div className="col">
@@ -176,8 +176,7 @@ const Navbar = (props) => {
 
           </div>
           <hr/>
-          <div className={style.brand}>
-
+          <p className={style.text}>Brand's</p>
           <div className={style.brand}>
             <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
             {props.products.map((item)=>(
@@ -185,7 +184,7 @@ const Navbar = (props) => {
                   ))}
               </select>
             </div>
-          </div>
+    
           <hr/>
 
 

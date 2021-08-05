@@ -11,22 +11,17 @@ import Carousel from '../../Component/Slider_flickity'
 import Carousel_Banner from '../../Component/modules/slider_Flickity_banner'
 
 export class Home extends Component {
-    // constructor(props){
-    //     super(props)
-    //     this.state={
-    //         products:[]
-    //     }
-    // }
 
     state={
         products:[],
         isLoading: true,
     }
     async getAllProduct() {
-        const response = await axios.get('http://localhost:4000/products');
+        const response = await axios.get('http://localhost:4000/v1/products');
         try {
+        console.log(response);
           this.setState({
-            products: response.data.data,
+            products: response.data.item,
             isLoading: false,
           });
         } catch (error) {

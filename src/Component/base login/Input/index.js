@@ -6,7 +6,7 @@ function input_Login(props) {
         <div>
             <input type={props.type} name={props.name}
             placeholder={props.placeholder} value={props.value}
-            className={style["form-control"]}/>
+            className={style["form-control"]} onChange={props.onChange}/>
         </div>
     )
 }

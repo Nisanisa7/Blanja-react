@@ -10,10 +10,13 @@ import { useEffect } from 'react'
 // import { Button } from 'bootstrap'
 
 const Selling_product = () => {
+    const headers = {
+        "Content-Type": "form-data"
+      };
 
     const [items, setItems] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:4000/category/")
+        axios.get("http://localhost:4000/v1/category/")
           .then((res)=>{
             setItems(res.data.data)
           })
@@ -31,7 +34,8 @@ const Selling_product = () => {
         'brands':'',
         'idCategory':'',
         'stock': '',
-        'image': ''
+        'image': null,
+        'imagePreview':null
         
     })
     const handlerChange = (e) =>{
@@ -41,13 +45,30 @@ const Selling_product = () => {
         })
 
     }
+    const handleInputImage = (e) =>{
+        setForm({
+            ...form,
+            image : e.target.files[0],
+            imagePreview: URL.createObjectURL(e.target.files[0])
+        })
+    }
     // const productList = (props) =>{
     //     return props.history.push('/seller/my_product')
     //  }
+    const formData = new FormData();
+
+    formData.append('productName', form.productName);
+    formData.append('description', form.description);
+    formData.append('price', form.price);
+    formData.append('brands', form.brands);
+    formData.append('idCategory', form.idCategory);
+    console.log(form.idCategory);
+    formData.append('stock', form.stock);
+    formData.append('image', form.image);
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:4000/products', form)
+        axios.post('http://localhost:4000/v1/products', formData)
         .then((res)=>{
             alert('Success');
             // setTimeout(() => productList(), 3000);
@@ -108,15 +129,39 @@ const Selling_product = () => {
                           </div>
 
                           <div class={`card ${style.imageCard}`}>
-                             <div className={`card-header ${style.headCard}`}>
+                                <div className={`card-header ${style.headCard}`}>
+                                    <h4 class={`card-title ${style.mineOrder}`}>Photo of goods</h4>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Photo of goods</h4>
+                                </div>
 
-                            </div>
+                              <div className={style.wrapper_Card}>     
+                                <div class="card-body">
+                                    <div class={style.box_Wrapper}>
+                                    <div className={style.image_Box}>
+                                    <img className={style.images}src={form.imagePreview} alt="" />
+                                        
+                                    </div>
+                                    <div className={style.image_Box2}>
+                                        
+                                    </div>
+                                    <div className={style.image_Box3}>
+                                        
+                                    </div>
+                                    <div className={style.image_Box4}>
+                                        
+                                        </div>
+                                    </div>
+                                    <hr className={style.line}/>
+                                    
+                                    <div className={style.button_Wrap}>
+                                        <label className={style.button} for="upload">Upload File</label>
+                                        <input id="upload" type="file" name="image" onChange={handleInputImage}/>
+                                    </div>
 
-                             <div class="card-body">
-                                 <input type="text" name="image" className={style.inpt} onChange={handlerChange}/>
-                             </div>
+                                    {/* <input type="file" name="image" className={}/> */}
+                                    {/* <input type="text" name="image" className={style.inpt} onChange={handlerChange}/> */}
+                                </div>
+                             </div> 
                           </div>
 
                           <div class={`card ${style.third_Card}`}>

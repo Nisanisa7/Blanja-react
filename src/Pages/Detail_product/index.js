@@ -32,10 +32,10 @@ export class Product extends Component {
         }
     }
     async getAllProduct() {
-        const response = await axios.get('http://localhost:4000/products');
+        const response = await axios.get('http://localhost:4000/v1/products');
         try {
           this.setState({
-            products: response.data.data,
+            products: response.data.item,
             isLoading: false,
           });
         } catch (error) {
@@ -43,10 +43,12 @@ export class Product extends Component {
         }
       }
     
-
+    handleCart = () =>{
+        
+    }
     getProductById = ()=>{
         // const productId = +this.props.match.params.id
-        axios.get(`http://localhost:4000/products/${this.props.match.params.id}`)
+        axios.get(`http://localhost:4000/v1/products/${this.props.match.params.id}`)
         .then((res)=>{
             const data = res.data.data[0]
             console.log(data);
@@ -138,7 +140,7 @@ export class Product extends Component {
                             </div>
                             <div className={style.button_content}>
                             <button type="button" className={`btn btn-outline-dark ${style.chat}`}>Chat</button>
-                            <Link to="/my_bag"><button type="button" className={`btn btn-outline-dark ${style.addbag}`}>Add bag</button></Link>
+                            <button type="button" onClick={this.handleCart} className={`btn btn-outline-dark ${style.addbag}`}>Add bag</button>
                             <Link to="/checkout"><button type="button" className={`btn btn-danger ${style.buynow}`}>Buy Now</button></Link>
                             </div>
                     </div>

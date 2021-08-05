@@ -8,15 +8,22 @@ import CheckOut from "./Pages/Checkout";
 // import About from './pages/About'
 // import Detail from './pages/Detail'
 import Login from "./Pages/Login";
-import Login_User from "./Pages/Login_User";
 import Register from "./Pages/Register";
-import Register_User from "./Pages/Register_User";
 import Reset_password_seller from "./Pages/Reset_pass_seller";
 import Confirm_pass_seller from "./Pages/Password_confirm_seller";
 import Login_confirmation from "./Pages/Login_confirm_seller";
-import Request_password from "./Pages/Request_pass_customer";
 import Bag from "./Pages/Mybag";
 
+
+import Login_User from "./Pages/Login_User";
+import Register_User from "./Pages/Register_User";
+import Request_password from "./Pages/Request_pass_customer";
+import Login_confirmation_buyer from "./Pages/Login_confirm_Buyer";
+import Confirm_pass_custommer from "./Pages/password_confirm_cust";
+
+
+
+//------------------ Profile seller =------------------
 import Profile_seller from "./Pages/Profile_seller";
 import Selling_product from "./Pages/Seller_Selling_Product";
 import Seller_My_Product from "./Pages/Seller_My_Products";
@@ -24,9 +31,10 @@ import EditProduct from "./Pages/Edit_produk";
 import Myorder_seller from "./Pages/Seller_My_Order";
 import CancelOrder_seller from "./Pages/Seller_Order_cancel";
 
-
+import CustommerEmail from "./Pages/Email_Page";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ResetPasswordCust from "./Pages/resetPass_user";
 
 
 class App extends Component {
@@ -67,13 +75,18 @@ class App extends Component {
 
           {/* ==================== AUTH ROUTER ======================================= */}
           <Route path="/login" component={Login} />
-          <Route path="/login_user" component={Login_User} />
           <Route path="/register" component={Register} />
-          <Route path="/register_customer" component={Register_User} />
           <Route path="/reset_password" component={Reset_password_seller} />
           <Route path="/Confirmation" component={Confirm_pass_seller} />
           <Route path="/login_Confirmation" component={Login_confirmation} />
+
+          <Route path="/login_user" component={Login_User} />
+          <Route path="/register_customer" component={Register_User} />
+          <Route path="/reset_password_custommer" component={ResetPasswordCust} />
+          <Route path="/login_confirm" component={Login_confirmation_buyer}/>
+          <Route path="/passConfirmation_cust" component={Confirm_pass_custommer}   />
           <Route path="/request_password" component={Request_password} />
+
           
           {/* ========================================================================= */}
 
@@ -86,6 +99,8 @@ class App extends Component {
           <Route path="/seller/cancel_order" component={CancelOrder_seller} />
 
           {/* =========================================================================== */}
+          <Route path="/activation_custommer" component={CustommerEmail} />
+
         </Switch>
       </BrowserRouter>
     );

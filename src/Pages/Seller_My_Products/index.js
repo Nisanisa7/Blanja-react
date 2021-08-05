@@ -16,10 +16,11 @@ export class Seller_My_Product extends Component {
         isLoading:true,
     }
     async getAllProduct() {
-        const response = await axios.get('http://localhost:4000/products');
+        const response = await axios.get('http://localhost:4000/v1/products');
+        // console.log(response);
         try {
           this.setState({
-            products: response.data.data,
+            products: response.data.item,
             isLoading: false,
           });
         } catch (error) {
@@ -89,7 +90,7 @@ export class Seller_My_Product extends Component {
         this.setState({search: event.target.value})
     }
     deleteProduct = (idProduct) =>{
-        axios.delete("http://localhost:4000/products/"+idProduct)
+        axios.delete("http://localhost:4000/v1/products/"+idProduct)
           .then(response => {
               if(response.data != null){
                   alert("product deleted successfully");

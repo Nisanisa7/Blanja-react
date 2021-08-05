@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap-grid.css";
 
 function Profile_seller() {
+    
+
     return (
         <div>
             <NavbarSeller/>

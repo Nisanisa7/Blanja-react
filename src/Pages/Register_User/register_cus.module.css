@@ -68,3 +68,56 @@
     margin-top: 20px;
    
 }
+.form-control{
+    height: 48px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #9B9B9B;
+    padding-left: 20px;
+}
+.btnLogin{
+    height: 48px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background: #DB3022;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.buttonGroup button{
+    display: inline-block;
+    width: 123px;
+    height: 48px;
+    border: 1px solid #9B9B9B;
+}
+.buttonGroup{
+    margin-top: 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.cus{
+    background: #DB3022;
+    border-color: #DB3022 !important;
+    color: white;
+    border-right: none !important;
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+}
+.seller{
+    background: white;
+    color: black;
+    border-color:black !important;
+    border-left: none !important; 
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}

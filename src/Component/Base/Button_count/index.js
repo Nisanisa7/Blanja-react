@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import style from './button.module.css'
 
 const Button_count = () => {
-    const[count, setCount] = useState(0);
+    const[count, setCount] = useState(1);
     return (
         <div className={style.button_wrapper}>
                  <button onClick={()=>setCount(count-1)} className={style.button_Odd}>-</button>
