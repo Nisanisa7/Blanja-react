@@ -8,18 +8,23 @@ import Profile from "../../../asset/image/christian-buehner-DItYlc26zVI-unsplash
 import Profile_logo from "../../../asset/image/sidebar customer/Ellipse 281.png";
 import Address_logo from "../../../asset/image/sidebar customer/Ellipse 282.png";
 import Copy_logo from "../../..//asset/image/sidebar customer/Ellipse 286.png";
+import { useSelector } from "react-redux";
 
 function Sidebar_seller() {
+  const profileState = useSelector(state => state.seller)
+  const avatar = profileState?.profile?.image
+  const profileSeller = localStorage.getItem('image')
+  const name = localStorage.getItem('name')
   return (
     <div>
       <aside>
         <div className={style.sidebar}>
           <div className={style.profile}>
             <div className={style.imageprofile}>
-              <img className={style.img1} src={Profile} alt="" />
+              <img className={style.img1} src={avatar ? avatar : profileSeller ? profileSeller : Profile} alt="" />
             </div>
             <div className={style.profile_det}>
-              <h4 className={style.nameP}>Johanes Mikael</h4>
+              <h4 className={style.nameP}>{name}</h4>
               <div className="row">
                 <div className="col-md-1">
                   <img className={style.pen} src={Pen} alt="" />

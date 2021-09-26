@@ -9,33 +9,24 @@ import CardProduct from '../../Component/modules/Card_Products'
 
 import Carousel from '../../Component/Slider_flickity'
 import Carousel_Banner from '../../Component/modules/slider_Flickity_banner'
-
+import { connect } from 'react-redux'
+import { getProduct } from '../../configs/redux/actions/productsAction'
+import styled from 'styled-components'
+import { ToastContainer } from 'react-toastify'
 export class Home extends Component {
 
-    state={
-        products:[],
-        isLoading: true,
-    }
-    async getAllProduct() {
-        const response = await axios.get('http://localhost:4000/v1/products');
-        try {
-        console.log(response);
-          this.setState({
-            products: response.data.item,
-            isLoading: false,
-          });
-        } catch (error) {
-          this.setState({ error, isLoading: false });
-        }
-      }
     componentDidMount(){
+        
+        this.props.fetchData()
 
-        this.getAllProduct()
     }
+
     render() {
+        console.log(this.props.products);
         return (
             <div>
-                <Navbar products={this.state.products}/>
+                <ToastContainer />
+                <Navbar products={this.props.products} className={style.navbar}/>
                 <div className="container">
 
 
@@ -43,7 +34,7 @@ export class Home extends Component {
                 <div className={style.head_Corou}>
 
                 {/* <Slider/> */}
-                <Carousel_Banner/>
+                <Carousel_Banner className={style.banner}/>
                 </div>
                 {/* ========= End of Corousel 1 ======================== */}
                 
@@ -60,18 +51,33 @@ export class Home extends Component {
                 <div className={style.texthead}>
                     <TextHead category="New" text="You'll never seen it before"/>
                 </div>   
-                     <CardProduct products={this.state.products} />
+                     <CardProduct products={this.props.products} />
 
             
                 <div className={style.texthead}>
                     <TextHead category="Popular" text="Find clothes that are trending recently"/>
                 </div>
-                <CardProduct products={this.state.products} />
+                <CardProduct products={this.props.products} />
 
                 </div>
+
             </div>
         )
     }
 }
+const mapStateToProps = (state) =>{
+ 
+    return{
+        products: state.products.products
+    }
+    
+}
+const mapDispatchToProps = dispatch => {
+    return {
+      fetchData: () =>{
+          dispatch(getProduct())
+      },
+    };
+  };
 
-export default Home
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

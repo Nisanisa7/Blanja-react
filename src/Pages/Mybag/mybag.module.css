@@ -86,10 +86,10 @@ body{
 }
 .checkS:checked:after {
 	content: '\2714';
-	font-size: 14px;
+	font-size: 30px;
 	position: absolute;
-	top: 0px;
-	left: 3px;
+	top: 0;
+	left: 5px;
 	color: #FFFFFF;
 }
 
@@ -111,12 +111,14 @@ body{
 .imageCard{
     /* background-color: darkblue; */
     width: 103px;
+     height: 69px;
     margin-left: 12px;
 }
 .imagejas{
-    width: 103px;
-    height: 69px;
+    width: 110px;
+    height: 90px;
     border-radius: 8px;
+    object-fit: cover;
 }
 .text{
     /* background-color: darkgoldenrod; */

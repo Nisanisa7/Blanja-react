@@ -1,1 +1,13 @@
 export const GET_PRODUCTS = 'GET_PRODUCTS'
+export const AVATAR_BUYER ='AVATAR_BUYER'
+export const GET_BUYER = 'GET_BUYER'
+export const UPDATE_ADDRESS = "UPDATE_ADDRESS"
+export const UPDATE_BUYER = 'UPDATE_BUYER'
+export const AVATAR_SELLER = 'AVATAR_SELLER'
+export const SELECTED_PRODUCTS = 'GET_SELECTED_PRODUCTS'
+export const ADD_TO_CART = 'ADD_TO_CART'
+export const UPDATE_STOCK = 'UPDATE_STOCK'
+export const REMOVE_CART = 'REMOVE_CART'
+export const ADD_ORDER = 'ADD_ORDER'
+export const EMPTY_CART = 'EMPTY_CART'
+export const UPDATE_SELLER = 'UPDATE_SELLER'

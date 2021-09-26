@@ -17,6 +17,7 @@ const Navbar_bf = (props) => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <div>
         <div className={` ${style.wrapperHead} container`}>
@@ -34,7 +35,8 @@ const Navbar_bf = (props) => {
               />
             </div>
             <div className={style.side_button}>
-              <button onClick={handleShow}>
+              <button>
+              {/* <button onClick={handleShow}> */}
                 <img src={vector} alt="" />
               </button>
             </div>
@@ -42,7 +44,7 @@ const Navbar_bf = (props) => {
 
           <div className={style.nav}>
             <ul className={style.nav_link}>
-              <li><a href="mybag.html"><img src={Cart} alt=""/></a></li>
+              <li><a href="/my_bag"><img src={Cart} alt=""/></a></li>
               <li>
                 <Link className="nav-link" to="/login">
                   <button className="btn btn-danger btnNav my-2 my-sm-0" type="submit">Login</button>
@@ -262,11 +264,11 @@ const Navbar_bf = (props) => {
             <hr />
             <p>Brand's</p>
             <div className={style.brand}>
-            <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
+            {/* <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
             {props.products.map((item)=>(
                   <option>{item.brands}</option>
                   ))}
-              </select>
+              </select> */}
             </div>
             <hr />
           </div>

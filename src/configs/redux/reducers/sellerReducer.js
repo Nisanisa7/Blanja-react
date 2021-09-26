@@ -1,3 +1,5 @@
+import * as string from '../string'
+
 const initialState = {
     profile: {},
     // formSubmitted: false,
@@ -7,6 +9,11 @@ const initialState = {
 
 const sellerReducer = (state = initialState, action)=>{
     switch(action.type){
+        case string.AVATAR_SELLER:
+            return{
+                ...state,
+                profile: action.payload.profile
+            }
         case 'LOGIN_SELLER':
             return {
                 ...state,

@@ -13,8 +13,8 @@
     position: absolute;
     margin-top: 50px;
     margin-left: 400px;
-    width: 800px;
-    height: 700px;
+    width: 65%;
+    height: 800px;
 }
 .mineOrder{
     padding-top: 26px;
@@ -63,11 +63,6 @@
   .tableItem{
       margin-top: 26px;
   }
-
-
-/* .responsive {
-    margin: 0;
-} */
 .wrapper {
 /* min-width: 1000px; */
     background: #fff;
@@ -104,6 +99,16 @@ border-color: #3FBAE4;
     font-size: 19px;
     top: 8px;
     left: 10px;
+}
+.item_head{
+    width: 100%;
+}
+.pane{
+    width: 100%;
+}
+.table{
+    width: 100%;
+    margin-top: 20px;
 }
 table.table tr th, table.table tr td {
     border-color: #e9e9e9;

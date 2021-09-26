@@ -29,9 +29,6 @@ function Carousel() {
       className={"carousel"} // default ''
       elementType={"div"} // default 'div'
       options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
     >
       <div className={style.carousel_cell}>
          <img src={Tshirt} alt="" /> </div>

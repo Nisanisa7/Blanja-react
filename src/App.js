@@ -35,17 +35,21 @@ import CustommerEmail from "./Pages/Email_Page";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ResetPasswordCust from "./Pages/resetPass_user";
+import PrivateRoute from "./configs/module/PrivateRoute";
+import ProfileCustommer from "./Pages/profile_Custommer";
+import Resultpage from "./Pages/ResultPage";
+import PublicRoute from "./Route/PublicRoute";
+import CustommerRoute from "./Route/CustommerRoute";
+import SellerRoute from "./Route/SellerRoute";
+import ProfileAddress from "./Pages/ProfileAddress";
+import ProfileMyOrder from "./Pages/ProfileMyOrder";
+
 
 
 class App extends Component {
   constructor() {
     super();
     console.log("ini method constructor");
-    // this.state = {
-    //   name : 'nisa',
-    //   umur: 17,
-    //   password:''
-    // }
   }
 
   compoponentDidMount() {
@@ -62,11 +66,11 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home_bf_login}/>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path="/product/:id" component={Product}/>
-          <Route exact path="/checkout" component={CheckOut}/>
-          <Route exact path="/my_bag" component={Bag}/>
+          <PublicRoute exact path="/" component={Home_bf_login}/>
+          <PrivateRoute exact path="/home" component={Home}/>
+          <CustommerRoute exact path="/product/:id" component={Product}/>
+          <CustommerRoute exact path="/checkout" component={CheckOut}/>
+          <CustommerRoute exact path="/my_bag" component={Bag}/>
 
 
 
@@ -74,33 +78,36 @@ class App extends Component {
           <Route path="/detail" component={Detail}/> */}
 
           {/* ==================== AUTH ROUTER ======================================= */}
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route path="/reset_password" component={Reset_password_seller} />
-          <Route path="/Confirmation" component={Confirm_pass_seller} />
-          <Route path="/login_Confirmation" component={Login_confirmation} />
+          <PublicRoute path="/login" component={Login} />
+          <PublicRoute path="/register" component={Register} />
+          <PublicRoute path="/reset_password" component={Reset_password_seller} />
+          <PublicRoute path="/Confirmation" component={Confirm_pass_seller} />
+          <PublicRoute path="/login_Confirmation" component={Login_confirmation} />
 
-          <Route path="/login_user" component={Login_User} />
-          <Route path="/register_customer" component={Register_User} />
-          <Route path="/reset_password_custommer" component={ResetPasswordCust} />
-          <Route path="/login_confirm" component={Login_confirmation_buyer}/>
-          <Route path="/passConfirmation_cust" component={Confirm_pass_custommer}   />
-          <Route path="/request_password" component={Request_password} />
+          <PublicRoute path="/login_user" component={Login_User} />
+          <PublicRoute path="/register_customer" component={Register_User} />
+          <PublicRoute path="/reset_password_custommer" component={ResetPasswordCust} />
+          <PublicRoute path="/login_confirm" component={Login_confirmation_buyer}/>
+          <PublicRoute path="/passConfirmation_cust" component={Confirm_pass_custommer}   />
+          <PublicRoute path="/request_password" component={Request_password} />
 
+          <Route path={`/search`} component={Resultpage}/>
           
           {/* ========================================================================= */}
 
           {/* ===================== SELLER ROUTER ======================================= */}
-          <Route path="/seller/profile_seller" component={Profile_seller} />
-          <Route path="/seller/selling_product" component={Selling_product} />
-          <Route path="/seller/my_product" component={Seller_My_Product} />
-          <Route path="/seller/edit/:id" component={EditProduct} />
-          <Route path="/seller/my_order" component={Myorder_seller} />
-          <Route path="/seller/cancel_order" component={CancelOrder_seller} />
+          <SellerRoute path="/seller/profile_seller" component={Profile_seller} />
+          <SellerRoute path="/seller/selling_product" component={Selling_product} />
+          <SellerRoute path="/seller/my_product" component={Seller_My_Product} />
+          <SellerRoute path="/seller/edit/:id" component={EditProduct} />
+          <SellerRoute path="/seller/my_order" component={Myorder_seller} />
+          <SellerRoute path="/seller/cancel_order" component={CancelOrder_seller} />
 
           {/* =========================================================================== */}
           <Route path="/activation_custommer" component={CustommerEmail} />
-
+          <CustommerRoute path="/profile" component={ProfileCustommer}/>
+          <CustommerRoute path="/profile-address" component={ProfileAddress}/>
+          <CustommerRoute path="/profile-myorder" component={ProfileMyOrder}/>
         </Switch>
       </BrowserRouter>
     );

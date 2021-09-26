@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Metropolis';
+    /* background: #F5F5F5; */
+    background-color:  #F5F5F5;
+  
+  }
+  h6{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9B9B9B;
+  }
+  h5{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .card_header{
+    background-color: #F5F5F5 !important;
+  }
+  .mainCard{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 450px !important;
+    width: 740px;
+    height: 560px;
+  }
+  hr{
+      border: 1px solid #D4D4D4;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 15px;
+  }
+  .parent_Flex{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.vertical {
+  margin-top: 25px;
+  border: 1px solid #D4D4D4;
+  height: 166px;
+  left: 50%;
+}
+.labelName2, .labelName3, .labelName4, .labelName5{
+  margin-top: 46px;
+}
+.inputP2, .inputP3, .inputP4, .inputP5{
+  margin-top: 22px;
+}
+.labelProf{
+  margin-top: 34px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #9B9B9B;
+}
+.inputProfile{
+  margin-top: 34px;
+}
+.inpt{
+  width: 348px;
+  height: 48px;
+  border: 1px solid #9B9B9B;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.inputP3{
+  margin-bottom: 0;
+}
+.inputP4{
+  /* margin-top: px; */
+  margin-bottom: 1px;
+  width: 348px !important;
+  height: 118px;
+}
+.inputP4 input[type ="text"]{
+width: 348px;
+height: 118px;
+}
+
+.inputP4 label{
+  font-size: 14px;
+  line-height: 24px;
+  color: #9B9B9B;
+}
+.girl{
+  margin-left: 10px;
+}
+.profilepic{
+  margin-top: 34px;
+}
+.Change{
+  margin-top: 19px;
+}
+.Change button{
+  border: 1px solid #9B9B9B;
+  box-sizing: border-box;
+  border-radius: 24px;
+  width: 120px;
+  height: 36px;
+  font-size: 14px;
+}
+.imageRight img{
+  width: 100px;
+  height: 99px;
+  border-radius: 80px;
+}
+.btnCenter button{
+  margin-top: 25px;
+  width: 100px;
+  height: 36px;
+  border-radius: 25px;
+  font-size: 14px;
+}

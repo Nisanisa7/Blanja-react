@@ -19,7 +19,7 @@ const ResetPasswordCust = (props) => {
   }
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.post('https://localhost:4000/v1/user/email', form)
+    axios.get('https://localhost:4000/v1/user/email', form)
     .then(()=>{
       alert('check your email for more information')
     })

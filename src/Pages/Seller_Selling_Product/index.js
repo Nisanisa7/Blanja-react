@@ -87,27 +87,27 @@ const Selling_product = () => {
                          </div>
                          <div className={`col-md-8 ${style.cardWrapp}`}>
                          <form className={style.form}>        
-                         <div class={`card ${style.topCard}`}>
+                         <div className={`card ${style.topCard}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Inventory</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Inventory</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                      <Input_seller label="Name of goods"  />
                                      <input type="text" name="productName" className={style.inpt} onChange={handlerChange}/>
                              </div>
                           </div>
 
-                          <div class={`card ${style.detail_card}`}>
+                          <div className={`card ${style.detail_card}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Item details</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Item details</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                      <Input_seller label="Unit Price"/>
                                      <input type="text" name="price" className={style.inpt} onChange={handlerChange}/>
 
@@ -119,7 +119,7 @@ const Selling_product = () => {
 
                                      <Input_seller label="Category"  />
                                     
-                                    <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01" onChange={handlerChange}>
+                                    <select className="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01" onChange={handlerChange}>
                                         {items.map((item)=>(
                                             <option value={item.idCategory}>{item.categoryName}</option>
                                         ))}
@@ -128,15 +128,15 @@ const Selling_product = () => {
                             
                           </div>
 
-                          <div class={`card ${style.imageCard}`}>
+                          <div className={`card ${style.imageCard}`}>
                                 <div className={`card-header ${style.headCard}`}>
-                                    <h4 class={`card-title ${style.mineOrder}`}>Photo of goods</h4>
+                                    <h4 className={`card-title ${style.mineOrder}`}>Photo of goods</h4>
 
                                 </div>
 
                               <div className={style.wrapper_Card}>     
-                                <div class="card-body">
-                                    <div class={style.box_Wrapper}>
+                                <div className="card-body">
+                                    <div className={style.box_Wrapper}>
                                     <div className={style.image_Box}>
                                     <img className={style.images} src={form.imagePreview} alt="" />
                                         
@@ -164,14 +164,14 @@ const Selling_product = () => {
                              </div> 
                           </div>
 
-                          <div class={`card ${style.third_Card}`}>
+                          <div className={`card ${style.third_Card}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Description</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Description</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                  <input type="text" name="description" className={style.inpt_Address} onChange={handlerChange}/>
 
                              {/* <Editor

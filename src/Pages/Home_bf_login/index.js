@@ -35,6 +35,7 @@ componentDidMount(){
     <div>
       <div className="container">
         <Navbar_bf  products={this.state.products} />
+        {/* <Navbar_bf  products={this.state.products} /> */}
 
         {/* ==== Corousel 1=========================== */}
         <div className={style.head_Corou}>

@@ -81,27 +81,27 @@ const handleUpdate = (e) =>{
                          </div>
                          <div className={`col-md-8 ${style.cardWrapp}`}>
                          <form className={style.form}>        
-                         <div class={`card ${style.topCard}`}>
+                         <div className={`card ${style.topCard}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Inventory</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Inventory</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                      <Input_seller label="Name of goods"  />
                                      <input type="text" name="productName" value={product.productName} onChange={(e)=>handleChange(e)} className={style.inpt}/>
                              </div>
                           </div>
 
-                          <div class={`card ${style.detail_card}`}>
+                          <div className={`card ${style.detail_card}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Item details</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Item details</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                      <Input_seller label="Unit Price"/>
                                      <input type="text" name="price" value={product.price} onChange={(e)=>handleChange(e)} className={style.inpt}/>
 
@@ -122,28 +122,27 @@ const handleUpdate = (e) =>{
                             
                           </div>
 
-                          <div class={`card ${style.imageCard}`}>
+                          <div className={`card ${style.imageCard}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Photo of goods</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Photo of goods</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                  <input type="text" name="image" value={product.image} onChange={(e)=>handleChange(e)} className={style.inpt}/>
                              </div>
                           </div>
 
-                          <div class={`card ${style.third_Card}`}>
+                          <div className={`card ${style.third_Card}`}>
                              <div className={`card-header ${style.headCard}`}>
 
-                                 <h4 class={`card-title ${style.mineOrder}`}>Description</h4>
+                                 <h4 className={`card-title ${style.mineOrder}`}>Description</h4>
 
                             </div>
 
-                             <div class="card-body">
+                             <div className="card-body">
                                  <input type="text" name="description" value={product.description} onChange={(e)=>handleChange(e)} className={style.inpt_Address}/>
-
                              </div> 
                           </div>
                           <div className={style.btnCenter}>

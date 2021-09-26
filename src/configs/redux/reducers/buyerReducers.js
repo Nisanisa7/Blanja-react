@@ -1,3 +1,5 @@
+import * as string from '../string'
+
 const initialState = {
     profile: {},
     // formSubmitted: false,
@@ -17,6 +19,25 @@ const buyerReducer = (state = initialState, action)=>{
                 ...state,
                 profile: action.payload,
                 // formSubmitted: false
+            }
+        case string.AVATAR_SELLER:
+            return{
+                ...state,
+                profile: action.payload.profile
+            }
+        case string.UPDATE_BUYER:
+            console.log('halo', state.profile.data);
+            return{
+                ...state,
+                profile: action.payload
+            }
+        case 'CHANGE_VALUE':
+            return{
+                ...state,
+                profile:{
+                        ...state.profile.data,
+                        ...action.payload
+                },
             }
         default:
             return state

@@ -14,10 +14,10 @@ const flickityOptions = {
   autoPlay: 1500,
 };
 
-function Carousel_Banner() {
+function Carousel_Banner({className}) {
   return (
     <Flickity
-      className={"carousel"} // default ''
+      className={"carousel", className} // default ''
       elementType={"div"} // default 'div'
       options={flickityOptions} // takes flickity options {}
       disableImagesLoaded={false} // default false

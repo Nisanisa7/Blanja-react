@@ -187,18 +187,18 @@ export class Seller_My_Product extends Component {
                                 <ul className={`pagination ${style.Pagination}`}>
 
                                 <button type="button" className="page-item" disabled={currentPage === 1 ? true : false} onClick={this.firstPage}>
-                                    <i class="fa fa-angle-double-left"></i></button>
+                                    <i className="fa fa-angle-double-left"></i></button>
 
                                 <button type="button" className="page-item" disabled={currentPage === 1 ? true : false} onClick={this.prevPage}>
-                                    <i class="fa fa-angle-left"></i></button>
+                                    <i className="fa fa-angle-left"></i></button>
 
                                 <input type="text" name="currentPage" className={style.inputText}  value={currentPage} onChange={this.changePage}/>
 
                                 <button type="button" className="page-item" disabled={currentPage === totalpage ? true : false} onClick={this.nextPage}>
-                                     <i class="fa fa-angle-right"></i></button>
+                                     <i className="fa fa-angle-right"></i></button>
 
                                 <button type="button" className="page-item " disabled={currentPage === totalpage ? true : false} onClick={this.lastPage}>
-                                    <i class="fa fa-angle-double-right"></i></button>
+                                    <i className="fa fa-angle-double-right"></i></button>
                                     
                                 </ul>
                             </div>
