@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">Telegram Clone</h3>
+  <h3 align="center">Blanja</h3>
   <p align="center">
   <image align="center" src='./Screenshot/logoblanja.png' />
   </p>
@@ -67,7 +67,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone these 2 repos (Frontend & Backend)
 ```sh
-git clone https://github.com/Nisanisa7/React-Telegram.git
+git clone https://github.com/Nisanisa7/Blanja-react.git
 ```
 2. Install NPM packages
 ```sh
