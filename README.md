@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+<br />
+<p align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Telegram Clone</h3>
+  <p align="center">
+  <image align="center" src='./screenshot/logoblanja.png' />
+  </p>
 
-## Available Scripts
+  <p align="center">
+    <br />
+    <a href="https://github.com/Nisanisa7/Blanja-react"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://blanja-silk.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/Nisanisa7/Blanja-react/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Nisanisa7/Blanja-react/issues">Request Feature</a>
+  </p>
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Screenshots](#screenshots)
+* [Related Project](#related-project-backend)
+* [Contact](#contact)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Blanja is an E-commerce website that focused on selling fashion related stuff. </br>
+There's two role in this aplication. That's User and Seller, as custommer you can order the item you liked, and manage your profile. </br>
+As seller you can manage your selling product, updating custommer order data, and manage your store profile. </br>
+Blanja also has a feature to filter, search, and paginate product.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [ReactJs](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [Styled Component](https://styled-components.com/)
+* [Formik](https://formik.org/)
+* [yup](https://www.npmjs.com/package/yup)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This is an example of how to list things you need to use the software and how to install them.
 
-## Learn More
+* [nodejs](https://nodejs.org/en/download/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone these 2 repos (Frontend & Backend)
+```sh
+git clone https://github.com/Nisanisa7/React-Telegram.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Add .env file at root folder project, and add following
+```sh
+REACT_APP_BACKEND_API = [Backend API]
+```
+4. Start website
+```sh
+npm start
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- ROADMAP -->
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="center">
+  <image src='./screenshot/login.png' width=400px/>
+  <image src='./screenshot/Homelogin1.png' width=400px/>
+  <image src='./screenshot/Homelogin2.png' width=400px/>
+  <image src='./screenshot/detailproduct1.png' width=400px/>
+  <image src='./screenshot/mybag.png' width=400px/>
+  <image src='./screenshot/CheckoutPage.png' width=400px/>
+  <image src='./screenshot/address page.png' width=400px/>
+  <image src='./screenshot/paymentmethod.png' width=400px/>
+  <image src='./screenshot/Userprofile.png' width=400px/>
+</p>
 
-### Making a Progressive Web App
+## Related Project
+* [`Frontend-React-Telegram`](https://github.com/Nisanisa7/Blanja-react)
+* [`Backend-Telegram-api`](https://github.com/Nisanisa7/Api-Ecommerce)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- CONTACT -->
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+My Email : mahuwarni.hyinka7@gmail.com
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
