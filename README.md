@@ -3,7 +3,7 @@
 
   <h3 align="center">Telegram Clone</h3>
   <p align="center">
-  <image align="center" src='./screenshot/logoblanja.png' />
+  <image align="center" src='./Screenshot/logoblanja.png' />
   </p>
 
   <p align="center">
@@ -88,15 +88,15 @@ npm start
 ## Screenshots
 
 <p align="center">
-  <image src='./screenshot/login.png' width=400px/>
-  <image src='./screenshot/Homelogin1.png' width=400px/>
-  <image src='./screenshot/Homelogin2.png' width=400px/>
-  <image src='./screenshot/detailproduct1.png' width=400px/>
-  <image src='./screenshot/mybag.png' width=400px/>
-  <image src='./screenshot/CheckoutPage.png' width=400px/>
-  <image src='./screenshot/address page.png' width=400px/>
-  <image src='./screenshot/paymentmethod.png' width=400px/>
-  <image src='./screenshot/Userprofile.png' width=400px/>
+  <image src='./Screenshot/login.png' width=400px/>
+  <image src='./Screenshot/Homelogin1.png' width=400px/>
+  <image src='./Screenshot/Homelogin2.png' width=400px/>
+  <image src='./Screenshot/detailproduct1.png' width=400px/>
+  <image src='./Screenshot/mybag.png' width=400px/>
+  <image src='./Screenshot/CheckoutPage.png' width=400px/>
+  <image src='./Screenshot/address page.png' width=400px/>
+  <image src='./Screenshot/paymentmethod.png' width=400px/>
+  <image src='./Screenshot/Userprofile.png' width=400px/>
 </p>
 
 ## Related Project
