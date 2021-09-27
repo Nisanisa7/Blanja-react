@@ -100,8 +100,8 @@ npm start
 </p>
 
 ## Related Project
-* [`Frontend-React-Telegram`](https://github.com/Nisanisa7/Blanja-react)
-* [`Backend-Telegram-api`](https://github.com/Nisanisa7/Api-Ecommerce)
+* [`Frontend-Blanja-Telegram`](https://github.com/Nisanisa7/Blanja-react)
+* [`Backend-Api-Ecommerce`](https://github.com/Nisanisa7/Api-Ecommerce)
 
 
 <!-- CONTACT -->
