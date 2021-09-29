@@ -90,7 +90,7 @@ npm start
 <p align="center">
   <image src='./Screenshot/login.png' width=550px/>
   <image src='./Screenshot/1.5 Login Seller.png' width=550px/>
-  <image src='./Screenshot/1.3 Register.png' width=550px/>
+  <image src='./Screenshot/1.3Register.png' width=550px/>
   <image src='./Screenshot/1.4 Register Seller.png' width=550px/>
   <image src='./Screenshot/2.1.png' width=550px/>
   <image src='./Screenshot/4.1.png' width=550px/>
