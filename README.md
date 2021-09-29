@@ -88,14 +88,18 @@ npm start
 ## Screenshots
 
 <p align="center">
-  <image src='./Screenshot/login.png' width=400px/>
-  <image src='./Screenshot/Homelogin1.png' width=400px/>
-  <image src='./Screenshot/Homelogin2.png' width=400px/>
-  <image src='./Screenshot/detailproduct1.png' width=400px/>
-  <image src='./Screenshot/mybag.png' width=400px/>
-  <image src='./Screenshot/CheckoutPage.png' width=400px/>
-  <image src='./Screenshot/address page.png' width=400px/>
-  <image src='./Screenshot/paymentmethod.png' width=400px/>
+  <image src='./Screenshot/login.png' width=550px/>
+  <image src='./Screenshot/1.5 Login Seller.png' width=550px/>
+  <image src='./Screenshot/1.3 Register.png' width=550px/>
+  <image src='./Screenshot/1.4 Register Seller.png' width=550px/>
+  <image src='./Screenshot/2.1.png' width=550px/>
+  <image src='./Screenshot/4.1.png' width=550px/>
+  <image src='./Screenshot/search result.png' width=550px/>
+  <image src='./Screenshot/search result not found.png' width=550px/>
+  <image src='./Screenshot/mybag.png' width=550px/>
+  <image src='./Screenshot/CheckoutPage.png' width=550px/>
+  <image src='./Screenshot/address page.png' width=550px/>
+  <image src='./Screenshot/paymentmethod.png' width=550px/>
   <image src='./Screenshot/Userprofile.png' width=400px/>
 </p>
 
