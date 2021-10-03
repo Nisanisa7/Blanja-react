@@ -87,7 +87,7 @@ npm start
 <!-- ROADMAP -->
 ## Screenshots
 
-<p align="center">
+<p align="center" float="left">
   <image src='./Screenshot/login.png' width=480px/>
   <image src='./Screenshot/1.5 Login Seller.png' width=480px/>
   <image src='./Screenshot/1.3Register.png' width=480px/>
