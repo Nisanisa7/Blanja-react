@@ -90,18 +90,18 @@ npm start
 <p align="center" float="left">
   <image src='./Screenshot/login.png' width=45%/>
   <image src='./Screenshot/1.5 Login Seller.png' width=45%/>
-  <image src='./Screenshot/1.3Register.png' width=480px/>
-  <image src='./Screenshot/1.4 Register Seller.png'  width=480px/>
-  <image src='./Screenshot/2.1.png' width=480px/>
-  <image src='./Screenshot/4.1.png' width=480px/>
-  <image src='./Screenshot/search result.png' width=480px/>
-  <image src='./Screenshot/search result not found.png' width=480px/>
-  <image src='./Screenshot/mybag.png' width=480px/>
-  <image src='./Screenshot/CheckoutPage.png' width=480px/>
-  <image src='./Screenshot/paymentmethod.png' width=480px/>
-  <image src='./Screenshot/order success.png' width=480px/>
-  <image src='./Screenshot/Userprofile.png' width=480px/>
-  <image src='./Screenshot/address page.png' width=480px/>
+  <image src='./Screenshot/1.3Register.png'width=45%/>
+  <image src='./Screenshot/1.4 Register Seller.png' width=45%/>
+  <image src='./Screenshot/2.1.png' width=45%/>
+  <image src='./Screenshot/4.1.png'width=45%/>
+  <image src='./Screenshot/search result.png' width=45%/>
+  <image src='./Screenshot/search result not found.png' width=45%/>
+  <image src='./Screenshot/mybag.png' width=45%/>
+  <image src='./Screenshot/CheckoutPage.png' width=45%/>
+  <image src='./Screenshot/paymentmethod.png' width=45%/>
+  <image src='./Screenshot/order success.png' width=45%/>
+  <image src='./Screenshot/Userprofile.png' width=45%/>
+  <image src='./Screenshot/address page.png' width=45%/>
 </p>
 
 ## Related Project
