@@ -88,10 +88,10 @@ npm start
 ## Screenshots
 
 <p align="center" float="left">
-  <image src='./Screenshot/login.png' width="32%"/>
-  <image src='./Screenshot/1.5 Login Seller.png' width="32%"/>
-  <image src='./Screenshot/1.3Register.png' width="32%"/>
-  <image src='./Screenshot/1.4 Register Seller.png' width="32%"/>
+  <image src='./Screenshot/login.png' width=50%/>
+  <image src='./Screenshot/1.5 Login Seller.png' width=50%/>
+  <image src='./Screenshot/1.3Register.png' width=480px/>
+  <image src='./Screenshot/1.4 Register Seller.png'  width=480px/>
   <image src='./Screenshot/2.1.png' width=480px/>
   <image src='./Screenshot/4.1.png' width=480px/>
   <image src='./Screenshot/search result.png' width=480px/>
