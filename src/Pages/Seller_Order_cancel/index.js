@@ -11,7 +11,6 @@ export class CancelOrder_seller extends Component {
             <NavbarSeller />
             <Sidebar_seller />
             <div className="container">
-
                 <div className={`card ${style.mainCard}`}>
                     <div className="head-card">
                     <h4 className={style.mineOrder}>My Order</h4>

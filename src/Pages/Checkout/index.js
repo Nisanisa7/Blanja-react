@@ -25,13 +25,17 @@ const Checkout = () => {
    const {payment} = paymentvalue
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const CardData = useSelector(state => state.products.cart)
+    const CardData = useSelector(state => state.cartItem.cart)
     const destruct = {...CardData}
     const history = useHistory()
     const dispatch = useDispatch()
+    const name = localStorage.getItem('name')
+    const address = localStorage.getItem('address')
+    const token = localStorage.getItem('token')
+    const idCustommer = localStorage.getItem('idCustommer')
     const custommer = useSelector(state=> state.buyer.profile)
-    const totalPrice = useSelector(state=> state.products.totalPrice)
-    const orderQty = useSelector(state=> state.products.quantity)
+    const totalPrice = useSelector(state=> state.cartItem.totalPrice)
+    const orderQty = useSelector(state=> state.cartItem.quantity)
 
     console.log(orderQty);
     
@@ -45,7 +49,7 @@ const Checkout = () => {
      });
     const product = arr.toString()
     const handleCheckout = () =>{
-        dispatch(addOrder( product, custommer.idCustommer, totalSummary, orderQty, payment, custommer.token, history))
+        dispatch(addOrder( product, idCustommer, totalSummary, orderQty, payment, token, history))
         dispatch({ type: string.EMPTY_CART , payload: {} })
     
     }
@@ -63,11 +67,10 @@ const Checkout = () => {
                     <div className="col-md-8">
                      <div className={`card shadow ${style.topcard}`}>
                         <div className="card-body">
-                            <h5 className={`card-title ${style.tittle1}`}>Andreas Jane</h5>
-                            <p className={`card-text ${style.tittle2}`}>Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas,
-                            Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>
-                            <button type="button" className="btn btn-outline-secondary" data-toggle="modal" data-target="#address">Choose
-                            another address</button>
+                            <h5 className={`card-title ${style.tittle1}`}>{CardData.name ? CardData.name : name}</h5>
+                            <p className={`card-text ${style.tittle2}`}>{CardData.address ? CardData.address : address}</p>
+                            {/* <button type="button" className="btn btn-outline-secondary" data-toggle="modal" data-target="#address">Choose
+                            another address</button> */}
                         </div>
                     </div>   
                     {CardData.map((item)=>
@@ -111,7 +114,7 @@ const Checkout = () => {
                                 <p className={style.priceCard2} for="">Rp. {totalSummary}</p>
                             </div>
                         </div>
-                    <button type="button" className={`btn btn-danger ${style.btncard2}`} onClick={handleShow} data-toggle="modal" data-target="#exampleModal">Select
+                    <button type="button" disabled={CardData.length === 0} className={`btn btn-danger ${style.btncard2}`} onClick={handleShow} data-toggle="modal" data-target="#exampleModal">Select
                     {/* <button type="button" disabled={CardData.length === 0} className={`btn btn-danger ${style.btncard2}`} onClick={handleCheckout} data-toggle="modal" data-target="#exampleModal">Select */}
                 payment</button>
                     </div>

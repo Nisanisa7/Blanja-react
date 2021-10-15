@@ -38,18 +38,15 @@ export const updateStock = (data, id) => (dispatch) =>{
         console.log(err);
     })
 }
-export const addCart = (data, amount,) => async (dispatch, getState)=>{
-    const cartData = {...data, amount:amount}
-    console.log(cartData, 'ini datacart');
-    // console.log(cartData.idProduct, 'data cart');
-    // {cartData.idProduct === cartData.idProduct ? amount:amount+1}
-    dispatch({type: string.ADD_TO_CART, payload:cartData});
-    if(getState().products.cart === cartData.idProduct){
-    
-    }
-    localStorage.setItem('Cart', JSON.stringify(getState().products.cart))
-    toastify(`${data.productName} added to cart`, 'success' )
-}
+// export const addCart = (data, amount,) => async (dispatch, getState)=>{
+//     const cartData = {...data, amount:amount}
+//     console.log(cartData, 'ini datacart');
+//     // console.log(cartData.idProduct, 'data cart');
+//     // {cartData.idProduct === cartData.idProduct ? amount:amount+1}
+//     dispatch({type: string.ADD_TO_CART, payload:cartData});
+//     localStorage.setItem('Cart', JSON.stringify(getState().products.cart))
+//     toastify(`${data.productName} added to cart`, 'success' )
+// }
 export const deleteItem = (index) => (dispatch,  getState) => {
     console.log(index);
     dispatch({type: string.REMOVE_CART,payload: index})

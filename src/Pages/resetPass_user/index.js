@@ -19,7 +19,7 @@ const ResetPasswordCust = (props) => {
   }
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.get('https://localhost:4000/v1/user/email', form)
+    axios.get(`${process.env.REACT_APP_BACKEND_API}/user/email`, form)
     .then(()=>{
       alert('check your email for more information')
     })

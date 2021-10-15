@@ -4,7 +4,7 @@ import * as string from '../string'
 
 export const loginBuyer = (data, history) => (dispatch)=>{
 
-    axios.post('http://localhost:4000/v1/user/login_buyer', data)
+    axios.post(`${process.env.REACT_APP_BACKEND_API}/user/login_buyer`, data)
     .then((res)=>{
     
 
@@ -63,18 +63,26 @@ export const loginBuyer = (data, history) => (dispatch)=>{
 }
 
 export const RegisterBuyer = (data, history)=>(dispatch)=>{
-    axios.post('http://localhost:4000/v1/user/register_buyer', data)
+    axios.post(`${process.env.REACT_APP_BACKEND_API}/user/register_buyer`, data)
     .then((res)=>{
         const result = res.data.data
         console.log(result);
         dispatch({type: 'REGISTER_BUYER', payload: result})
-        alert('Registration success! check your email for activation')
+        Swal.fire(
+          ' Success',
+          'Welcome to blanja',
+          'success'
+        )
         history.push('/login_user')
     })
     .catch((error)=>{
         console.log(error.response);
         dispatch({type: 'REGISTER_BUYER', payload: error.response.data.error.message })
-        alert(error.response.data.error.message)
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error.response.data.error.message,
+        })
     })
 }
 
@@ -96,6 +104,7 @@ export const updateProfileBuyer = (data, idCustommer, token) => (dispatch) =>{
         const resData = res.data.data
         console.log(resData, 'ini data user');
         localStorage.setItem('image',resData.image)
+        localStorage.setItem('name',resData.name)
         dispatch({type: string.UPDATE_BUYER, payload: resData})
         Swal.fire(
             'Update Success',
@@ -111,4 +120,30 @@ export const updateProfileBuyer = (data, idCustommer, token) => (dispatch) =>{
           })
     })
 
+}
+
+export const UpdateAddress = (data, idCustommer, token) => (dispatch) =>{
+
+    axios.put(`${process.env.REACT_APP_BACKEND_API}/profile/address/${idCustommer}`, data ,{
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((res)=>{
+        console.log(res);
+        localStorage.setItem('address', data.address)
+        dispatch({type: string.UPDATE_ADDRESS, payload: data})
+        Swal.fire(
+            'Update Success',
+            'update address success',
+            'success'
+          )
+    })
+    .catch((err)=>{
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: err.response?.data?.message,
+          })
+    })
 }

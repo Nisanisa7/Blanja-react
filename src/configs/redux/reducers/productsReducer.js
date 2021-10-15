@@ -2,10 +2,6 @@ import * as string from '../string'
 const initialState ={
     products :[],
     loading: false,
-    cart: [],
-    totalPrice: 0,
-    delivery: 0,
-    quantity: 0
 }
 
 const productReducer = (state = initialState, action)=>{
@@ -37,28 +33,6 @@ const productReducer = (state = initialState, action)=>{
                     }
                 },
             }
-        case string.ADD_TO_CART:
-           const item = action.payload
-    
-               return {
-                    ...state,
-                    cart: [...state.cart, item],
-                    totalPrice: state.totalPrice + action.payload.price * action.payload.amount,
-                    quantity: state.quantity + action.payload.amount
-               }
-        case string.REMOVE_CART:
-            return{
-                ...state,
-                cart: state.cart.filter((cart)=> cart.index !== action.payload)
-            }
-        case string.EMPTY_CART:
-            return{
-                cart: [],
-                totalPrice: 0,
-                delivery: 0,
-                quantity: 0
-            }   
-       
             default:
                 return state
     }

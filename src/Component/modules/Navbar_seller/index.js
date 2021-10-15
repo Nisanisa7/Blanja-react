@@ -46,7 +46,7 @@ const NavbarSeller = () => {
       <div className={`${style.wrapperHead}`}>
         <div className={`container ${style.wrapper}`}>
 
-          <Link to="/home">
+          <Link to="/profile">
             <div className={style.logo}>
               <img src={LogoBag} alt="" />
               <img className={style.img2} src={LogoText} alt="" />
@@ -56,7 +56,7 @@ const NavbarSeller = () => {
               <div className={style.box_container}>
                <form onSubmit="">
                 <input
-                  class={style.search}
+                  className={style.search}
                   type="text"
                   name=""
                   placeholder="search"         

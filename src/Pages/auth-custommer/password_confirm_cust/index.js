@@ -35,7 +35,7 @@ const Confirm_pass_custommer = () => {
   }
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axios.put('http://localhost:4000/v1/user/changePass')
+    axios.put(`${process.env.REACT_APP_BACKEND_API}/user/changePass`)
     .then((res)=>{
       alert('success')
     })

@@ -8,7 +8,7 @@ import TextHead from '../../Component/Base_home/Text_head'
 import CardProduct from '../../Component/modules/Card_Products'
 import Carousel from '../../Component/Slider_flickity'
 import Carousel_Banner from '../../Component/modules/slider_Flickity_banner'
-
+import { ToastContainer } from "react-toastify";
 export class Home_bf_login extends Component {
   
   state={
@@ -16,7 +16,7 @@ export class Home_bf_login extends Component {
     isLoading: true,
 }
 async getProduct() {
-    const response = await axios.get('http://localhost:4000/v1/products');
+    const response = await axios.get(`${process.env.REACT_APP_BACKEND_API}/products`);
     try {
       this.setState({
         products: response.data.item,
@@ -34,6 +34,7 @@ componentDidMount(){
   return (
     <div>
       <div className="container">
+      <ToastContainer/>
         <Navbar_bf  products={this.state.products} />
         {/* <Navbar_bf  products={this.state.products} /> */}
 

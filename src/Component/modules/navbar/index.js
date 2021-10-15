@@ -21,7 +21,7 @@ import { useClickOutside } from 'react-click-outside-hook'
 import Suggest_product from "../../Base/Suggest_Product";
 import { toastify } from "../../../utils";
 import { ToastContainer } from "react-toastify";
-
+import { useSelector } from "react-redux";
 const containerVariants = {
   expanded: {
     height: "30em",
@@ -34,7 +34,9 @@ const containerVariants = {
 const Navbar = ({ className }) => {
   const [show, setShow] = useState(false);
   const [Search, setSearch] = useState('')
-
+  const profileState = useSelector(state => state.buyer)
+  const avatar = profileState?.profile?.image
+  const profileSeller = localStorage.getItem('image')
   
   const handleClose = () => setShow(false);
 
@@ -65,7 +67,7 @@ const Navbar = ({ className }) => {
               <div className={style.box_container}>
                <form onSubmit={handleSubmit}>
                 <input
-                  class={style.search}
+                  className={style.search}
                   type="text"
                   name=""
                   placeholder="search"         
@@ -102,7 +104,7 @@ const Navbar = ({ className }) => {
               </li>
               <li>
                 <Link to="/profile">
-                  <img src={Profile} alt="" />
+                  <img  className={style.avatar} src={avatar ? avatar : profileSeller ? profileSeller : Profile} alt="" />
                 </Link>
               </li>
             </ul>
@@ -206,7 +208,7 @@ const Navbar = ({ className }) => {
             <hr />
             <p className={style.text}>Brand's</p>
             <div className={style.brand}>
-              {/* <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
+              {/* <select className="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
             {props.products.map((item)=>(
                   <option>{item.brands}</option>
                   ))}

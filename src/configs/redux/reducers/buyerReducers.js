@@ -31,14 +31,19 @@ const buyerReducer = (state = initialState, action)=>{
                 ...state,
                 profile: action.payload
             }
-        case 'CHANGE_VALUE':
+        case string.UPDATE_ADDRESS:
             return{
                 ...state,
+                profile: action.payload
+            }
+        case 'CHANGE_VALUE':
+            return{
                 profile:{
-                        ...state.profile.data,
+                        ...state.profile,
                         ...action.payload
                 },
             }
+      
         default:
             return state
     }

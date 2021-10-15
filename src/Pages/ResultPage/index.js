@@ -3,7 +3,6 @@ import style from './Result.module.css'
 import Star from '../../asset/image/Star.png'
 import Navbar from '../../Component/modules/navbar'
 import { Link, useLocation } from 'react-router-dom'
-import Pagination from '@mui/material/Pagination';
 import axios from 'axios'
 import Empty from '../../asset/image/5259951.jpg'
 
@@ -102,9 +101,7 @@ const Resultpage = () => {
                     </div>
                 ))}
             </div>
-            <div className={style.paginationWrapper}>
-                <Pagination count={pagination?.currentpageNumber} shape="rounded" onChange={handlePagination} />
-            </div>
+
             </div>}
         </div>
     )

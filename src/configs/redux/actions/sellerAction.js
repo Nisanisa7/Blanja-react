@@ -3,11 +3,9 @@ import Swal from "sweetalert2"
 import { string } from "yup";
 
 export const loginSeller = (data, history)=>(dispatch)=>{
-    axios.post('http://localhost:4000/v1/user/login_seller', data)
+    axios.post(`${process.env.REACT_APP_BACKEND_API}/user/login_seller`, data)
     .then((res)=>{
-        // const result = res.data.data
-        // localStorage.setItem('token', result.token)
-        // console.log(result);
+
         const token = res.data.data.token;
         const idSeller = res.data.data.idSeller;
         const store_name = res.data.data.store_name;
@@ -62,7 +60,7 @@ export const loginSeller = (data, history)=>(dispatch)=>{
     })
 }
 export const registerSeller = (data)=>(dispatch)=>{
-    axios.post('http://localhost:4000/v1/user/register_seller', data)
+    axios.post(`${process.env.REACT_APP_BACKEND_API}/user/register_seller`, data)
     .then((res)=>{
         const result = res.data.data
         console.log(result);

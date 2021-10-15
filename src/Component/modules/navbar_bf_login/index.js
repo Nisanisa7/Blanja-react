@@ -28,7 +28,7 @@ const Navbar_bf = (props) => {
           <div className={style.search_bar}>
             <div className={style.box_container}>
               <input
-                class={style.search}
+                className={style.search}
                 type="text"
                 name=""
                 placeholder="search"
@@ -264,7 +264,7 @@ const Navbar_bf = (props) => {
             <hr />
             <p>Brand's</p>
             <div className={style.brand}>
-            {/* <select class="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
+            {/* <select className="custom-select" className={style.inpt} name="idCategory" id="inputGroupSelect01">
             {props.products.map((item)=>(
                   <option>{item.brands}</option>
                   ))}

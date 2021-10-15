@@ -15,7 +15,9 @@
     height: 480px;
 
 }
-
+.form{
+    margin-left: 390px !important;
+}
 .imageCard{
     padding-left: 20px;
     /* padding-top: 20px; */
