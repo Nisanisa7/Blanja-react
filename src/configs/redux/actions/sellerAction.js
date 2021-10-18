@@ -19,14 +19,14 @@ export const loginSeller = (data, history)=>(dispatch)=>{
         const isAuth = true;
 
         
-        if(status === 'inactive'){
-            Swal.fire({
-                icon: 'error',
-                title: 'Boo Boo',
-                text: 'Please activate your account first!',
-              })
-              return 
-        }
+        // if(status === 'inactive'){
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'Boo Boo',
+        //         text: 'Please activate your account first!',
+        //       })
+        //       return 
+        // }
         const adminData = res.data.data
         dispatch({type: 'LOGIN_SELLER', payload: adminData})
         
@@ -67,7 +67,7 @@ export const registerSeller = (data)=>(dispatch)=>{
         dispatch({type: 'REGISTER_SELLER', payload: result})
         Swal.fire(
             'Registration success!',
-            'check your email for activation',
+            'Welcome to blanja',
             'success'
         )
     })

@@ -21,14 +21,14 @@ export const loginBuyer = (data, history) => (dispatch)=>{
         const status = res.data.data.status;
         const isAuth = true;
 
-        if(status === 'inactive'){
-            Swal.fire({
-                icon: 'error',
-                title: 'Boo Boo',
-                text: 'Please activate your account first!',
-              })
-              return 
-        }
+        // if(status === 'inactive'){
+        //     Swal.fire({
+        //         icon: 'error',
+        //         title: 'Boo Boo',
+        //         text: 'Please activate your account first!',
+        //       })
+        //       return 
+        // }
         const userData = res.data.data
         // console.log(result);
         dispatch({type: 'LOGIN_BUYER', payload: userData})
@@ -69,7 +69,7 @@ export const RegisterBuyer = (data, history)=>(dispatch)=>{
         console.log(result);
         dispatch({type: 'REGISTER_BUYER', payload: result})
         Swal.fire(
-          ' Success',
+          'Registration success!',
           'Welcome to blanja',
           'success'
         )
