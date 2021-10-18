@@ -34,7 +34,7 @@ export class Home extends Component {
                 <div className={style.head_Corou}>
 
                 {/* <Slider/> */}
-                <Carousel_Banner className={style.banner}/>
+                <Carousel_Banner/>
                 </div>
                 {/* ========= End of Corousel 1 ======================== */}
                 
