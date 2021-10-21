@@ -70,7 +70,7 @@ export const RegisterBuyer = (data, history)=>(dispatch)=>{
         dispatch({type: 'REGISTER_BUYER', payload: result})
         Swal.fire(
           'Registration success!',
-          'Welcome to blanja',
+          'Login to enjoy our feature!',
           'success'
         )
         history.push('/login_user')

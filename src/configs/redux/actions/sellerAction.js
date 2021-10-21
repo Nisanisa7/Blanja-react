@@ -59,7 +59,7 @@ export const loginSeller = (data, history)=>(dispatch)=>{
           })
     })
 }
-export const registerSeller = (data)=>(dispatch)=>{
+export const registerSeller = (data, history)=>(dispatch)=>{
     axios.post(`${process.env.REACT_APP_BACKEND_API}/user/register_seller`, data)
     .then((res)=>{
         const result = res.data.data
@@ -67,9 +67,10 @@ export const registerSeller = (data)=>(dispatch)=>{
         dispatch({type: 'REGISTER_SELLER', payload: result})
         Swal.fire(
             'Registration success!',
-            'Welcome to blanja',
+            'Login to enjoy our feature!',
             'success'
         )
+        history.push('/login')
     })
     .catch((error)=>{
         console.log(error.response);
