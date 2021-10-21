@@ -156,13 +156,13 @@ const Product = () => {
                 />
 
                 <div className={style.text_Wrap}>
-                  <p className={style.text_size}>Size</p>
+                  {/* <p className={style.text_size}>Size</p> */}
                   <p className={style.text_total}>Jumlah</p>
                 </div>
                 <div className={style.button_wrapper}>
-                  <div className={style.button_left}>
+                  {/* <div className={style.button_left}>
                     <Button_count />
-                  </div>
+                  </div> */}
                   <div className={style.button_rigth}>
                     <Button_count
                       plus={() => handleIncrement()}
