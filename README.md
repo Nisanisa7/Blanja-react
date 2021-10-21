@@ -11,7 +11,7 @@
     <a href="https://github.com/Nisanisa7/Blanja-react"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://vercel.com/nisanisa7/letsblanja/">View Demo</a>
+    <a href="https://letsblanja.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/Nisanisa7/Blanja-react/issues">Report Bug</a>
     ·
