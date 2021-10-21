@@ -18,7 +18,7 @@ export const loginBuyer = (data, history) => (dispatch)=>{
         const datebirth = res.data.data.datebirth;
         const image = res.data.data.image;
         const role = res.data.data.role;
-        const status = res.data.data.status;
+        // const status = res.data.data.status;
         const isAuth = true;
 
         // if(status === 'inactive'){
@@ -43,7 +43,7 @@ export const loginBuyer = (data, history) => (dispatch)=>{
         localStorage.setItem('image', image);
         localStorage.setItem('isAuth', isAuth);
         localStorage.setItem('role', role);
-        localStorage.setItem('status', status);
+        // localStorage.setItem('status', status);
         Swal.fire(
             'Login Success',
             'Welcome to blanja',

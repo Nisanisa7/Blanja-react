@@ -15,7 +15,7 @@ export const loginSeller = (data, history)=>(dispatch)=>{
         const store_description = res.data.data.store_description;
         const image = res.data.data.image;
         const role = res.data.data.role;
-        const status = res.data.data.status;
+        // const status = res.data.data.status;
         const isAuth = true;
 
         
@@ -39,7 +39,7 @@ export const loginSeller = (data, history)=>(dispatch)=>{
         localStorage.setItem('store_description', store_description);
         localStorage.setItem('image', image);
         localStorage.setItem('role', role);
-        localStorage.setItem('status', status);
+        // localStorage.setItem('status', status);
         localStorage.setItem('isAuth', isAuth);
 
         Swal.fire(
