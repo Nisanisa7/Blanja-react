@@ -88,20 +88,64 @@ npm start
 ## Screenshots
 
 <p align="center" float="left">
-  <image src='./Screenshot/login.png' width=45%/>
-  <image src='./Screenshot/1.5 Login Seller.png' width=45%/>
-  <image src='./Screenshot/1.3Register.png'width=45%/>
-  <image src='./Screenshot/1.4 Register Seller.png' width=45%/>
-  <image src='./Screenshot/2.1.png' width=45%/>
-  <image src='./Screenshot/4.1.png'width=45%/>
-  <image src='./Screenshot/search result.png' width=45%/>
-  <image src='./Screenshot/search result not found.png' width=45%/>
-  <image src='./Screenshot/mybag.png' width=45%/>
-  <image src='./Screenshot/CheckoutPage.png' width=45%/>
-  <image src='./Screenshot/paymentmethod.png' width=45%/>
-  <image src='./Screenshot/order success.png' width=45%/>
-  <image src='./Screenshot/Userprofile.png' width=45%/>
-  <image src='./Screenshot/address page.png' width=45%/>
+ <table>
+  <tr>
+    <td>Login - Custommer</td>
+    <td>Login - Seller</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/login.png' width=100%/></td>
+    <td><image src='./Screenshot/1.5 Login Seller.png' width=100%/></td>
+  </tr>
+  <tr>
+    <td>Register - Custommer</td>
+    <td>Register - Seller</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/1.3Register.png'width=100%/></td>
+    <td> <image src='./Screenshot/1.4 Register Seller.png' width=100%/></td>
+  </tr>
+  <tr>
+    <td>Home Page</td>
+    <td>Detail Product Page</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/2.1.png' width=100%/></td>
+    <td><image src='./Screenshot/4.1.png'width=100%/></td>
+  </tr>
+  <tr>
+    <td>Search Result Page</td>
+    <td>Search Result Not Found Page</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/search result.png' width=100%/></td>
+    <td><image src='./Screenshot/search result not found.png' width=100%/></td>
+  </tr>
+  <tr>
+    <td>Cart Page</td>
+    <td>Checkout Page</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/mybag.png' width=100%/></td>
+    <td><image src='./Screenshot/CheckoutPage.png' width=100%/></td>
+  </tr>
+  <tr>
+    <td>Checkout Page - Payment Method</td>
+    <td>Checkout Page - Order Success</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/paymentmethod.png' width=100%/></td>
+    <td><image src='./Screenshot/order success.png' width=100%/></td>
+  </tr>
+  <tr>
+    <td>Profile Page - Edit Profile</td>
+    <td>Profile Page - Change Address</td>
+  </tr>
+  <tr>
+    <td><image src='./Screenshot/Userprofile.png' width=100%/></td>
+    <td><image src='./Screenshot/address page.png' width=100%/></td>
+  </tr>
+ </table>
 </p>
 
 ## Related Project
